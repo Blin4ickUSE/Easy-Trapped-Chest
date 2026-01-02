@@ -1,0 +1,47 @@
+name: 🐞 Bug Report / Incompatibility
+description: Report a broken texture or incompatibility with a Minecraft version
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Integrity requirements
+      description: Please check all options before submitting.
+      options:
+        - label: I am using the latest version of the resource pack.
+          required: true
+        - label: I have searched existing issues and didn't find a similar report.
+          required: true
+  
+  - type: input
+    attributes:
+      label: Minecraft Version
+      description: Which version of Minecraft are you using? (e.g., 1.20.4, 1.21 Snapshot)
+      placeholder: 1.21
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Loader / Modpack
+      description: Are you using Vanilla or mods like Optifine/Sodium? (Important for texture bugs)
+      options:
+        - Vanilla (No mods)
+        - Optifine
+        - Sodium / Iris
+        - Fabric / Forge (Other)
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Description of the Bug
+      description: Explain what is wrong with the Trapped Chest texture.
+      placeholder: The chest looks purple and black... / The trap indicator is missing...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: Please paste screenshots here if possible.
