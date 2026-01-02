@@ -17,7 +17,7 @@ body:
     attributes:
       label: Minecraft Version
       description: Which version of Minecraft are you using? (e.g., 1.20.4, 1.21 Snapshot)
-      placeholder: 1.21
+      placeholder: "1.21"
     validations:
       required: true
 
