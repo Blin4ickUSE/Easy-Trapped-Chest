@@ -1,0 +1,26 @@
+name: 🚀 New Version Support
+description: Request support for a new Minecraft update or snapshot
+title: "[UPDATE] Support for "
+labels: ["enhancement"]
+body:
+  - type: input
+    attributes:
+      label: Target Minecraft Version
+      description: Which new version needs support?
+      placeholder: e.g. 1.21.2 or Snapshot 24wXXX
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Type of Update
+      options:
+        - Full Release
+        - Snapshot / Pre-release
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: Did Mojang change anything specific about chests in this version?
